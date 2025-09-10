@@ -46,8 +46,7 @@ function Home2() {
               with{" "}
               <b className="purple">
                 Next.js <span className="white-normal"> (Learning) </span>
-              </b>{" "}
-              and
+              </b>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
