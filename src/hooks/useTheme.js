@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
 
 // Import logos
-import logoPurple from '../Assets/logo-purple.png';
-import logoGreen from '../Assets/logo-green.png';
-import logoBlue from '../Assets/logo-blue.png';
-import logoOrange from '../Assets/logo-orange.png';
-import logoPink from '../Assets/logo-pink.png';
-import logoCyan from '../Assets/logo-cyan.png';
-import logoYellow from '../Assets/logo-yellow.png'; 
-import logoRed from '../Assets/logo-red.png'; 
+import logoPurple from '../assets/logo-purple.png';
+import logoGreen from '../assets/logo-green.png';
+import logoBlue from '../assets/logo-blue.png';
+import logoOrange from '../assets/logo-orange.png';
+import logoPink from '../assets/logo-pink.png';
+import logoCyan from '../assets/logo-cyan.png';
+import logoYellow from '../assets/logo-yellow.png'; 
+import logoRed from '../assets/logo-red.png'; 
 
 // Import avatars
 import avatarPurple from '../Assets/avatar-purple.png';
