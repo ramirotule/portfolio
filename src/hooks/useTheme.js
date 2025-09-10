@@ -11,24 +11,24 @@ import logoYellow from '../assets/logo-yellow.png';
 import logoRed from '../assets/logo-red.png'; 
 
 // Import avatars
-import avatarPurple from '../Assets/avatar-purple.png';
-import avatarGreen from '../Assets/avatar-green.png';
-import avatarBlue from '../Assets/avatar-blue.png';
-import avatarOrange from '../Assets/avatar-orange.png';
-import avatarPink from '../Assets/avatar-pink.png';
-import avatarCyan from '../Assets/avatar-cyan.png'; 
-import avatarYellow from '../Assets/avatar-yellow.png';
-import avatarRed from '../Assets/avatar-red.png';    
+import avatarPurple from '../assets/avatar-purple.png';
+import avatarGreen from '../assets/avatar-green.png';
+import avatarBlue from '../assets/avatar-blue.png';
+import avatarOrange from '../assets/avatar-orange.png';
+import avatarPink from '../assets/avatar-pink.png';
+import avatarCyan from '../assets/avatar-cyan.png'; 
+import avatarYellow from '../assets/avatar-yellow.png';
+import avatarRed from '../assets/avatar-red.png';    
 
 // Import home main images
-import homeMainPurple from '../Assets/home-main-purple.png';
-import homeMainGreen from '../Assets/home-main-green.png';
-import homeMainBlue from '../Assets/home-main-blue.png';
-import homeMainOrange from '../Assets/home-main-orange.png';
-import homeMainPink from '../Assets/home-main-pink.png';
-import homeMainCyan from '../Assets/home-main-cyan.png';
-import homeMainYellow from '../Assets/home-main-yellow.png';
-import homeMainRed from '../Assets/home-main-red.png';
+import homeMainPurple from '../assets/home-main-purple.png';
+import homeMainGreen from '../assets/home-main-green.png';
+import homeMainBlue from '../assets/home-main-blue.png';
+import homeMainOrange from '../assets/home-main-orange.png';
+import homeMainPink from '../assets/home-main-pink.png';
+import homeMainCyan from '../assets/home-main-cyan.png';
+import homeMainYellow from '../assets/home-main-yellow.png';
+import homeMainRed from '../assets/home-main-red.png';
 
 
 // Paletas de colores disponibles
