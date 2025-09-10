@@ -135,7 +135,7 @@ const applyTheme = (palette) => {
 };
 
 export const useTheme = () => {
-  const [currentTheme, setCurrentTheme] = useState('yellow');
+  const [currentTheme, setCurrentTheme] = useState('purple');
 
   useEffect(() => {
     // Cargar tema guardado del localStorage
