@@ -8,7 +8,6 @@ function Customize() {
 
   return (
     <Container fluid className="customize-section">
-      <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col

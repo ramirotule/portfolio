@@ -157,7 +157,6 @@ export const useTheme = () => {
 
   // Devuelve el nombre del PDF según el theme actual
   const getCurrentPdfFile = () => {
-    console.log("El valor del currentTheme es:", currentTheme); 
     if (currentTheme === 'pink') return '/CV_Ramiro_PINK.pdf';
     if (currentTheme === 'green') return '/CV_Ramiro_GREEN.pdf';
     if (currentTheme === 'yellow') return '/CV_Ramiro_YELLOW.pdf';

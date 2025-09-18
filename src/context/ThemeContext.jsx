@@ -1,10 +1,10 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 import { colorPalettes, applyTheme } from "../hooks/useTheme";
 
 const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  const [currentTheme, setCurrentTheme] = useState("yellow");
+  const [currentTheme, setCurrentTheme] = useState("purple");
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("portfolioTheme");

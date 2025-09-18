@@ -19,7 +19,6 @@ function Home() {
       // background: "var(--section-background-color)",
     }}>
       <Container fluid id="home">
-        <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">

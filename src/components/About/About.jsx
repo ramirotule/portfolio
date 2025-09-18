@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Techstack from "./Techstack";
@@ -10,9 +9,8 @@ import Languages from "./Languages";
 function About() {
   return (
     <Container fluid className="about-section">
-      <Particle />
       <Container>
-  <Row style={{ justifyContent: "center", padding: "10px", alignItems: "stretch", display: "flex" }}>
+        <Row style={{ justifyContent: "center", padding: "10px", alignItems: "stretch", display: "flex" }}>
           <Col
             md={7}
             style={{
@@ -51,7 +49,7 @@ function About() {
         <h1 className="project-heading">
           <strong className="purple">Languages</strong> I speak
         </h1>
-        <Languages/>
+        <Languages />
       </Container>
     </Container>
   );

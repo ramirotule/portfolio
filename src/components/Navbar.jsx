@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
@@ -21,10 +18,6 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const { currentLogo, currentTheme } = useThemeContext();
-
-  // Debug - puedes quitar esto después
-  console.log('Current theme in Navbar:', currentTheme);
-  console.log('Current logo:', currentLogo);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
