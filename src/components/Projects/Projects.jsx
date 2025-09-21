@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import raminformaticaImg from "../../assets/Projects/ecommerce-ram.png";
 import clickFraganciasImg from  "../../assets/Projects/ecommerce-clickfragancias.png";
 import alkilaImg from  "../../assets/Projects/alkila.png";
+import carsaleImg from  "../../assets/Projects/carsale.png";
 
 function Projects() {
   return (
@@ -51,6 +52,19 @@ function Projects() {
               The platform focuses on offering a wide variety of fragrances and beauty essentials, making it easy for users to browse by categories, brands, and price ranges. With a modern and responsive design, ClickFragancias ensures accessibility across all devices, while building trust and convenience for customers looking to shop online."
               ghLink="https://github.com/ramirotule/ecommerce-clickfragancias"
               demoLink="https://ecommerce-clickfragancias.vercel.app/"
+            />
+          </Col>
+
+            <Col md={9} className="project-card">
+            <ProjectCard
+              imgPath={carsaleImg}
+              isBlog={false}
+              title="Carsale"
+              description="Carsale is a management platform designed for car dealerships to simplify and optimize their daily operations. The system provides tools to manage vehicle inventory, keep track of stock in real time, and streamline sales processes.
+              One of its key features is the ability to automatically generate and publish posts on Instagram, showcasing available vehicles with their details such as model, price, and features. This automation not only saves time but also enhances the dealership’s online presence and marketing strategy.
+              By combining stock management with social media integration, Carsale offers dealerships an efficient way to control inventory, reach potential customers, and improve sales performance through digital channels."
+              ghLink="https://github.com/ramirotule/carsale"
+              // demoLink="https://ecommerce-clickfragancias.vercel.app/"
             />
           </Col>
 
