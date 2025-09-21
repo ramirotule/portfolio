@@ -2,13 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../assets/Projects/leaf.png";
-import emotion from "../../assets/Projects/emotion.png";
-import editor from "../../assets/Projects/codeEditor.png";
-// import chatify from "../../assets/Projects/chatify.png";
-import ecommerce from "../../assets/Projects/ecommerce-ram.png";
-import suicide from "../../assets/Projects/suicide.png";
-import bitsOfCode from "../../assets/Projects/blog.png";
+import raminformaticaImg from "../../assets/Projects/ecommerce-ram.png";
+import clickFraganciasImg from  "../../assets/Projects/ecommerce-clickfragancias.png";
+import alkilaImg from  "../../assets/Projects/alkila.png";
 
 function Projects() {
   return (
@@ -23,70 +19,41 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={ecommerce}
+              imgPath={raminformaticaImg}
               isBlog={false}
-              title="Ecommerce RAM Informática"
-              description="E-commerce platform for RAM Informática built with React.js and Firebase. Features product catalog, real-time stock updates, and secure checkout flow."
+              title="RAM Informática"
+              description="Ram Informática is an e-commerce platform developed with React.js, focused on delivering a seamless and modern shopping experience for technology products.
+              One of the key features of this project is its automation system, built with Python, which automatically processes daily price updates. The system reads product lists received through a WhatsApp newsletter, extracts and formats the data, and then uploads the updated prices directly to the platform.
+              This integration ensures that customers always have access to the latest stock and pricing information, while significantly reducing the manual workload of updating product catalogs."
               ghLink="https://github.com/ramirotule/ecommerce-ram"
-              demoLink=""
+              demoLink="https://www.raminformatica.com.ar"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={alkilaImg}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink=""
-            //   demoLink="https://blogs.soumya-jit.tech/"
+              title="Alkila"
+              description="Alkila is a web platform designed to make property rentals more accessible for people in my city. The application allows users to search and explore available rentals with customizable filters, such as price range, number of rooms, property type, and more.
+              The goal of Alkila is to simplify the process of finding a home by offering an intuitive interface, smart search options, and real-time listings. With a focus on usability and performance, the platform provides a modern solution for connecting property owners and renters, making the local housing market more transparent and efficient."
+              ghLink="https://github.com/ramirotule/alkila"
+              demoLink="https://alkila.com.ar"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={clickFraganciasImg}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink=""
-            //   demoLink="https://editor.soumya-jit.tech/"              
+              title="Clickfragancias"
+              description="ClickFragancias is an e-commerce platform specialized in the sale of perfumes, cosmetics, and beauty products. The website is designed to provide customers with a smooth and enjoyable shopping experience, featuring an intuitive interface, organized product catalog, and secure checkout process.
+              The platform focuses on offering a wide variety of fragrances and beauty essentials, making it easy for users to browse by categories, brands, and price ranges. With a modern and responsive design, ClickFragancias ensures accessibility across all devices, while building trust and convenience for customers looking to shop online."
+              ghLink="https://github.com/ramirotule/ecommerce-clickfragancias"
+              demoLink="https://ecommerce-clickfragancias.vercel.app/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink=""
-            //   demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink=""
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink=""
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
