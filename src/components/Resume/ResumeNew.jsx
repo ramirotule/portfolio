@@ -5,10 +5,9 @@ import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
-import workerSrc from "pdfjs-dist/build/pdf.worker.mjs?url";
 import { useTheme } from "../../hooks/useTheme";
 
-pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 
 function ResumeNew() {
@@ -47,9 +46,12 @@ function ResumeNew() {
             <Document
               file={getCurrentPdfFile()}
               onLoadSuccess={handleLoadSuccess}
-              onLoadError={(err) =>
-                console.error("❌ Error cargando PDF", err)
-              }
+              onLoadError={(err) => {
+                console.error("❌ Error cargando PDF:", err);
+                console.log("📂 Intentando cargar PDF desde:", getCurrentPdfFile());
+              }}
+              loading={<div style={{ textAlign: 'center', padding: '50px', color: 'white' }}>Cargando PDF...</div>}
+              error={<div style={{ textAlign: 'center', padding: '50px', color: 'red' }}>Error al cargar el PDF. Verifica la consola para más detalles.</div>}
             >
               {Array.from(new Array(numPages), (_, index) => (
                 <Page

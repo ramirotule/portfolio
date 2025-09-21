@@ -16,7 +16,7 @@ function Home() {
       padding: 0,
       margin: 0,
       overflowX: "hidden",
-      // background: "var(--section-background-color)",
+      background: "var(--section-background-color)",
     }}>
       <Container fluid id="home">
         <Container className="home-content">

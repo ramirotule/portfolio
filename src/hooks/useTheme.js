@@ -40,6 +40,7 @@ const colorPalettes = {
     accent: "#cd5ff8",
     gradient: "linear-gradient(to bottom left, rgba(17, 16, 16, 0.582), rgba(12, 8, 24, 0.904))",
     imageGradient: "linear-gradient(to bottom left, rgba(17, 16, 16, 0.678), rgba(12, 10, 22, 0.863))",
+    bodyColor: "#0c0818",
     logo: logoPurple,
     avatar: avatarPurple,
     homeMain: homeMainPurple
@@ -51,6 +52,7 @@ const colorPalettes = {
     accent: "#16a34a",
     gradient: "linear-gradient(to bottom left, rgba(16, 17, 16, 0.582), rgba(8, 24, 12, 0.904))",
     imageGradient: "linear-gradient(to bottom left, rgba(16, 17, 16, 0.678), rgba(10, 22, 12, 0.863))",
+    bodyColor: "#08180c",
     logo: logoGreen,
     avatar: avatarGreen,
     homeMain: homeMainGreen
@@ -62,6 +64,7 @@ const colorPalettes = {
     accent: "#1d4ed8",
     gradient: "linear-gradient(to bottom left, rgba(16, 16, 17, 0.582), rgba(8, 12, 24, 0.904))",
     imageGradient: "linear-gradient(to bottom left, rgba(16, 16, 17, 0.678), rgba(10, 12, 22, 0.863))",
+    bodyColor: "#080c18",
     logo: logoBlue,
     avatar: avatarBlue,
     homeMain: homeMainBlue
@@ -73,6 +76,7 @@ const colorPalettes = {
     accent: "#dc2626",
     gradient: "linear-gradient(to bottom left, rgba(17, 16, 16, 0.582), rgba(24, 12, 8, 0.904))",
     imageGradient: "linear-gradient(to bottom left, rgba(17, 16, 16, 0.678), rgba(22, 12, 10, 0.863))",
+    bodyColor: "#180c08",
     logo: logoOrange,
     avatar: avatarOrange,
     homeMain: homeMainOrange    
@@ -132,6 +136,7 @@ const applyTheme = (palette) => {
   root.style.setProperty('--image-gradient', palette.imageGradient);
   root.style.setProperty('--secondary-color', palette.secondary);
   root.style.setProperty('--accent-color', palette.accent);
+  root.style.setProperty('--footer-background-color', '#0c0513');
 };
 
 export const useTheme = () => {

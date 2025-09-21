@@ -5,8 +5,15 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container fluid className="footer">
-      <Row style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+    <Container fluid className="footer" style={{ background: 'var(--section-background-color)' }}>
+      <Row style={{ 
+        display: 'flex', 
+        justifyContent: 'space-around', 
+        alignItems: 'center',
+        background: 'var(--section-background-color)',
+        margin: 0,
+        padding: '20px 0'
+      }}>
         <Col md="4" className="footer-copywright" style={{ textAlign: 'center' }}>
           <h3>Designed and Developed by Ramiro Toulemonde</h3>
         </Col>
