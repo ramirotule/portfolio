@@ -66,7 +66,7 @@ function NavBar() {
         </Navbar.Toggle>
         
         {/* Language selector visible en mobile - fuera del collapse */}
-        <div className="d-flex align-items-center d-md-none">
+        <div className="d-flex align-items-center d-md-none mobile-language-container">
           <LanguageSelector />
         </div>
         

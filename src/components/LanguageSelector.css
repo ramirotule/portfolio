@@ -105,30 +105,37 @@
 
 /* Mejoras para mobile */
 @media (max-width: 768px) {
+  /* Contenedor mobile específico */
+  .mobile-language-container {
+    margin-left: 8px !important;
+    margin-right: 4px !important;
+  }
+  
   .language-selector {
-    margin-left: 10px;
+    margin-left: 0 !important;
   }
   
   .language-selector .dropdown-toggle {
-    padding: 6px !important;
+    padding: 4px 6px !important;
     font-size: 12px !important;
-    width: 50px !important;
+    width: 44px !important;
     margin-left: 0 !important;
-    min-width: 50px !important;
+    min-width: 44px !important;
     justify-content: center !important;
     display: flex !important;
     align-items: center !important;
+    border-radius: 6px !important;
   }
   
   .language-selector .dropdown-menu {
     min-width: 80px !important;
     max-width: 90px !important;
-    left: -10px !important;
+    left: -20px !important;
     padding: 4px 0 !important;
   }
   
   .language-selector .dropdown-item {
-    padding: 8px 6px !important;
+    padding: 6px 4px !important;
     font-size: 11px !important;
     margin: 1px 2px !important;
     white-space: nowrap !important;
@@ -138,5 +145,19 @@
   
   .language-selector .dropdown-item span {
     margin-right: 4px !important;
+  }
+}
+
+/* Específico para iPhone 12 Pro y similares */
+@media (max-width: 390px) {
+  .mobile-language-container {
+    margin-left: 4px !important;
+    margin-right: 2px !important;
+  }
+  
+  .language-selector .dropdown-toggle {
+    width: 40px !important;
+    min-width: 40px !important;
+    padding: 3px 4px !important;
   }
 }

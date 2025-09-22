@@ -39,6 +39,48 @@
     width: 180px;
     height: 40px;
   }
+  
+  /* Optimización para iPhone 12 Pro y móviles */
+  .navbar .container {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  
+  .navbar-brand {
+    margin-right: 8px !important;
+  }
+  
+  .navbar-toggler {
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+    padding: 4px 6px !important;
+  }
+  
+  .mobile-language-container {
+    margin-left: 4px !important;
+  }
+}
+
+/* Específico para iPhone 12 Pro (390px) */
+@media (max-width: 390px) {
+  .navbar .container {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+  
+  .navbar-logo-responsive {
+    width: 160px;
+    height: 36px;
+  }
+  
+  .navbar-brand {
+    margin-right: 6px !important;
+  }
+  
+  .navbar-toggler {
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+  }
 }
 /* Fondo igual al About para Customize */
 .customize-section {
