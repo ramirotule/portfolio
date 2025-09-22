@@ -53,6 +53,7 @@ function NavBar() {
 
           {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
         </Navbar.Brand>
+        
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -63,6 +64,12 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
+        
+        {/* Language selector visible en mobile - fuera del collapse */}
+        <div className="d-flex align-items-center d-md-none">
+          <LanguageSelector />
+        </div>
+        
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
@@ -114,8 +121,8 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            {/* Selector de idioma */}
-            <Nav.Item className="d-flex align-items-center" style={{ marginLeft: '20px' }}>
+            {/* Selector de idioma - solo visible en desktop */}
+            <Nav.Item className="d-none d-md-flex align-items-center" style={{ marginLeft: '20px' }}>
               <LanguageSelector />
             </Nav.Item>
           </Nav>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Dropdown } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { FaGlobe } from 'react-icons/fa';
+import ReactCountryFlag from "react-country-flag";
 import './LanguageSelector.css';
 
 const LanguageSelector = () => {
@@ -11,12 +12,14 @@ const LanguageSelector = () => {
     {
       code: 'en',
       name: 'English',
-      flag: '🇺🇸'
+      abbreviation: 'EN',
+      countryCode: 'GB'
     },
     {
       code: 'es', 
       name: 'Español',
-      flag: '🇪🇸'
+      abbreviation: 'SP',
+      countryCode: 'ES'
     }
   ];
 
@@ -39,9 +42,15 @@ const LanguageSelector = () => {
           borderRadius: '6px'
         }}
       >
-        <FaGlobe style={{ marginRight: '8px', fontSize: '16px' }} />
+        <FaGlobe className="d-none d-md-inline" style={{ marginRight: '8px', fontSize: '16px' }} />
         <span className="d-none d-md-inline">{currentLanguage.name}</span>
-        <span className="d-md-none">{currentLanguage.flag}</span>
+        <ReactCountryFlag 
+          countryCode={currentLanguage.countryCode} 
+          svg 
+          className="d-md-none"
+          style={{ fontSize: '1.2em' }}
+          title={currentLanguage.name}
+        />
       </Dropdown.Toggle>
 
       <Dropdown.Menu
@@ -70,11 +79,20 @@ const LanguageSelector = () => {
               borderRadius: '3px'
             }}
           >
-            <span style={{ marginRight: '10px', fontSize: '18px' }}>
-              {language.flag}
-            </span>
-            <span>
+            <ReactCountryFlag 
+              countryCode={language.countryCode} 
+              svg 
+              style={{ 
+                marginRight: '10px',
+                fontSize: '1.2em'
+              }}
+              title={language.name}
+            />
+            <span className="d-none d-md-inline">
               {language.name}
+            </span>
+            <span className="d-md-none">
+              {language.abbreviation}
             </span>
           </Dropdown.Item>
         ))}
