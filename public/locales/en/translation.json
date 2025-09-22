@@ -100,6 +100,10 @@
     "alkila": {
       "title": "Alkila",
       "description": "Alkila is a web platform designed to make property rentals more accessible for people in my city. The application allows users to search and explore available rentals with customizable filters, such as price range, number of rooms, property type, and more. The goal of Alkila is to simplify the process of finding a home by offering an intuitive interface, smart search options, and real-time listings. With a focus on usability and performance, the platform provides a modern solution for connecting property owners and renters, making the local housing market more transparent and efficient."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Portfolio Website is a personal project built to showcase my work and skills as a frontend developer. The application implements i18next to support multiple languages, allowing visitors from different regions to browse the content in their preferred language. It also uses local storage to save user preferences, such as theme selection, providing a personalized experience every time they visit. With a fully mobile-friendly design, the site adapts seamlessly to any screen size, ensuring accessibility and usability across devices. This project reflects my focus on internationalization, user experience, and responsive design, while serving as a central hub to present my projects and professional profile."
     }
   },
   "resume": {

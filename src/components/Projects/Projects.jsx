@@ -8,6 +8,7 @@ import clickFraganciasImg from "../../assets/Projects/ecommerce-clickfragancias.
 import alkilaImg from "../../assets/Projects/alkila.png";
 import carsaleImg from "../../assets/Projects/carsale.png";
 import tablaPeriodicaImg from "../../assets/Projects/tablaperiodica.png";
+import portfolioImg from "../../assets/Projects/portfolio.png";
 
 function Projects() {
   const { t } = useTranslation();
@@ -22,6 +23,20 @@ function Projects() {
           {t('projects.description')}
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px", display: "flex", alignItems: "stretch" }}>
+
+          <Col md={4} className="project-card" style={{ display: "flex" }}>
+            <ProjectCard
+              imgPath={portfolioImg}
+              isBlog={false}
+              title={t('projects.portfolio.title')}
+              description={t('projects.portfolio.description')}
+              ghLink="https://github.com/ramirotule/portfolio"
+              demoLink="https://www.ramirotoulemonde.com.ar"
+              inprogress={false}
+            />
+          </Col>
+
+
           <Col md={4} className="project-card" style={{ display: "flex" }}>
             <ProjectCard
               imgPath={raminformaticaImg}
