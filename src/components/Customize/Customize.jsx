@@ -2,9 +2,11 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { MdPalette } from "react-icons/md";
 import Particle from "../Particle";
 import { useThemeContext } from "../../context/ThemeContext.jsx";
+import { useTranslation } from "react-i18next";
 
 function Customize() {
   const { currentTheme, changeTheme, colorPalettes } = useThemeContext();
+  const { t } = useTranslation();
 
   return (
     <Container fluid className="customize-section">
@@ -22,10 +24,7 @@ function Customize() {
               <Card.Body>
                 <blockquote className="blockquote mb-0">
                   <p style={{ textAlign: "justify", marginTop: "80px" }}>
-
-                    Customize the look and feel of the portfolio by choosing your favorite 
-                    color palette from <strong>8 available options</strong>: Purple (original), Green, Blue, Orange, Pink, Yellow, Red and Cyan. 
-                    The changes will be applied immediately and saved for your next visit.
+                    {t('customize.customizeDescription')} <strong>{t('customize.availableOptions')}</strong>{t('customize.optionsDetail')}
                   </p>
                 </blockquote>
               </Card.Body>
@@ -36,10 +35,10 @@ function Customize() {
         <Row>
           <Col md={12} className="customize-content">
             <h3 className="project-heading">
-              <strong className="purple">Color Palettes</strong>
+              <strong className="purple">{t('customize.colorPalettes')}</strong>
             </h3>
             <p style={{ color: "white" }}>
-              Select your favorite color combination:
+              {t('customize.selectFavorite')}
             </p>
             
             <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
@@ -81,7 +80,7 @@ function Customize() {
                       </h5>
                       {currentTheme === key && (
                         <p style={{ color: palette.primary, textAlign: 'center', fontSize: '0.9em' }}>
-                          <MdPalette /> Active
+                          <MdPalette /> {t('customize.active')}
                         </p>
                       )}
                     </Card.Body>
@@ -94,7 +93,7 @@ function Customize() {
               <Col md={8}>
                 <div style={{ textAlign: 'center', marginBottom: '20px' }}>
                   <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.9em' }}>
-                    💡 <strong>Tip:</strong> Each theme includes its own custom logo that adapts automatically.
+                    💡 <strong>{t('customize.tip')}</strong> {t('customize.tipDescription')}
                   </p>
                 </div>
               </Col>

@@ -4,9 +4,11 @@ import { AiFillGithub } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
 import { useTheme } from "../../hooks/useTheme";
+import { useTranslation } from "react-i18next";
 
 function Home2() {
   const { currentAvatar } = useTheme();
+  const { t } = useTranslation();
 
   return (
     <Container fluid className="home-about-section" id="about">
@@ -14,39 +16,27 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              {t('home.home2.letMeIntroduce').split(' ').slice(0, 2).join(' ')} <span className="purple"> {t('home.home2.letMeIntroduce').split(' ').slice(2).join(' ')} </span>
             </h1>
             <p className="home-about-body">
-              I have been developing web applications for more than 5 years,
-              specializing exclusively in Frontend development
+              {t('home.home2.experience')}
               <br />
-              <br />I have long experience working with Technologies likes
+              <br />{t('home.home2.technologies').split('React.js')[0]}
               <i>
                 <b className="purple">
-                  {" "}
-                  React.js <span className="white-normal"> & </span> React
-                  Native,{" "}
-                  <span className="white-normal">most of the time using </span>
-                  TypeScript{" "}
-                  <span className="white-normal">
-                    as the main programming language.
-                  </span>{" "}
+                  {t('home.home2.techHighlight1')}
+                  <span className="white-normal">{t('home.home2.techConnector1')}</span>
+                  {t('home.home2.techHighlight2')}
+                  <span className="white-normal">{t('home.home2.techConnector2')}</span>
+                  {t('home.home2.techHighlight3')}
+                  <span className="white-normal">{t('home.home2.techConnector3')}</span>
                 </b>
               </i>
               <br />
               <br />
-              I consider myself a proactive professional with excellent soft
-              skills, always eager to learn and ready to take on new challenges.
-              My passion lies in creating clean, scalable, and user-friendly
-              interfaces, delivering great user experiences while constantly
-              improving my technical skills.
+              {t('home.home2.personality')}
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with{" "}
-              <b className="purple">
-                Next.js <span className="white-normal"> (Learning) </span>
-              </b>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -57,10 +47,8 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', textAlign: 'right' }}>
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
+            <h1>{t('home.findMe')}</h1>
+         
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
@@ -93,6 +81,9 @@ function Home2() {
                 </a>
               </li>
             </ul>
+               <p>
+              {t('home.feelFree')} <span className="purple">{t('home.connect')} </span>{t('home.withMe')}
+            </p>
           </Col>
         </Row>
       </Container>

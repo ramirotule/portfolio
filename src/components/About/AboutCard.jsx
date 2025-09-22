@@ -2,47 +2,55 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
 import { useTheme } from "../../hooks/useTheme";
+import { useTranslation } from "react-i18next";
 
 function AboutCard() {
   const { getCurrentPalette } = useTheme();
+  const { t } = useTranslation();
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am{" "}
-            <span className="purple">Ramiro Santiago Toulemonde </span>
-            from <span className="white-normal">
-              {" "}
-              Santa Rosa, La Pampa,{" "}
-            </span>{" "}
-            <span className="purple">ARGENTINA.</span>
+            {t('about.description1')}{" "}
+            <span className="purple">{t('about.name')} </span>
+            {t('about.location').split('ARGENTINA')[0]}<span className="purple">ARGENTINA.</span>
             <br />
-            I graduated as a Systems Analyst in 2012.
+            {t('about.description2')}
             <br />
-            I have been working in the private IT sector for 3 and a half years since 2022 to present. Prior to this, I gained 6 years of experience in the IT field within a governmental organization, where I took my first steps in frontend development.
+            {t('about.description3')}
             <br />
             <br />
-            I am currently employed as a software developer at Temperies.
+            {t('about.description4').split('Temperies')[0]}
+            <a 
+              href="https://www.temperies.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ color: getCurrentPalette().primary, textDecoration: 'none' }}
+              onMouseEnter={(e) => e.target.style.textDecoration = 'underline'}
+              onMouseLeave={(e) => e.target.style.textDecoration = 'none'}
+            >
+              Temperies
+            </a>
+            {t('about.description4').includes('.') ? '.' : ''}
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            {t('about.activities')}
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Intrustruments (Piano and Guitar)
+              <ImPointRight /> {t('about.activity1')}
             </li>
             <li className="about-activity">
-              <ImPointRight /> Restore old cars
+              <ImPointRight /> {t('about.activity2')}
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling with my family
+              <ImPointRight /> {t('about.activity3')}
             </li>
           </ul>
 
           <p style={{ color: getCurrentPalette().accent }}>
-
-            "My favorite quote is: "The only thing impossible is what you don't try.!"{" "}
+            {t('about.quote')}
           </p>
         </blockquote>
       </Card.Body>

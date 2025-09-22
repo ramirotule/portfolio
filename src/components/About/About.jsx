@@ -5,8 +5,10 @@ import Aboutcard from "./AboutCard";
 import fotoPerfil from "../../assets/foto_perfil.png";
 import Toolstack from "./Toolstack";
 import Languages from "./Languages";
+import { useTranslation } from "react-i18next";
 
 function About() {
+  const { t } = useTranslation();
   return (
     <Container fluid className="about-section">
       <Container>
@@ -23,7 +25,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              {t('about.title')} <strong className="purple">{t('about.highlight')}</strong>
             </h1>
             <Aboutcard />
           </Col>
@@ -36,18 +38,18 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          {t('about.skillset')} <strong className="purple">{t('about.skillsetHighlight')} </strong>
         </h1>
 
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          <strong className="purple">{t('about.tools')}</strong> {t('about.toolsHighlight')}
         </h1>
         <Toolstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Languages</strong> I speak
+          <strong className="purple">{t('about.languages')}</strong> {t('about.languagesHighlight')}
         </h1>
         <Languages />
       </Container>

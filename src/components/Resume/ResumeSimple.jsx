@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
+import { useTranslation } from "react-i18next";
 import { AiOutlineDownload } from "react-icons/ai";
 import { useTheme } from "../../hooks/useTheme";
 
 function ResumeSimple() {
   const [showIframe, setShowIframe] = useState(true);
   const { getCurrentPdfFile } = useTheme();
+  const { t } = useTranslation();
 
   const toggleView = () => {
     setShowIframe(!showIframe);
@@ -25,7 +27,7 @@ function ResumeSimple() {
               style={{ maxWidth: "250px", marginRight: "10px" }}
             >
               <AiOutlineDownload />
-              &nbsp;Download CV
+              &nbsp;{t('resume.downloadCV')}
             </Button>
          
           </div>
@@ -65,10 +67,10 @@ function ResumeSimple() {
                 backgroundColor: "rgba(255,255,255,0.05)"
               }}>
                 <h4 style={{ color: "var(--imp-text-color)", marginBottom: "20px" }}>
-                  📄 Curriculum Vitae
+                  📄 {t('resume.cvTitle')}
                 </h4>
                 <p style={{ color: "var(--imp-text-color)", marginBottom: "30px" }}>
-                  Haz clic en el botón de abajo para ver o descargar mi CV en formato PDF
+                  {t('resume.cvDescription')}
                 </p>
                 <Button
                   variant="primary"
@@ -77,7 +79,7 @@ function ResumeSimple() {
                   size="lg"
                 >
                   <AiOutlineDownload />
-                  &nbsp;Ver CV en PDF
+                  &nbsp;{t('resume.viewPdf')}
                 </Button>
               </div>
             )}
@@ -92,7 +94,7 @@ function ResumeSimple() {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;{t('resume.downloadCV')}
           </Button>
         </Row>
       </Container>

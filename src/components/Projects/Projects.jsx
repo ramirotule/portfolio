@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import raminformaticaImg from "../../assets/Projects/ecommerce-ram.png";
@@ -9,28 +10,27 @@ import carsaleImg from "../../assets/Projects/carsale.png";
 import tablaPeriodicaImg from "../../assets/Projects/tablaperiodica.png";
 
 function Projects() {
+  const { t } = useTranslation();
+  
   return (
     <Container fluid className="project-section">
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          {t('projects.title')} <strong className="purple">{t('projects.highlight')} </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          {t('projects.description')}
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px", display: "flex", alignItems: "stretch" }}>
           <Col md={4} className="project-card" style={{ display: "flex" }}>
             <ProjectCard
               imgPath={raminformaticaImg}
               isBlog={false}
-              title="RAM Informática"
-              description="Ram Informática is an e-commerce platform developed with React.js, focused on delivering a seamless and modern shopping experience for technology products.
-              One of the key features of this project is its automation system, built with Python, which automatically processes daily price updates. The system reads product lists received through a WhatsApp newsletter, extracts and formats the data, and then uploads the updated prices directly to the platform.
-              This integration ensures that customers always have access to the latest stock and pricing information, while significantly reducing the manual workload of updating product catalogs."
+              title={t('projects.ramInformatica.title')}
+              description={t('projects.ramInformatica.description')}
               ghLink="https://github.com/ramirotule/ecommerce-ram"
               demoLink="https://www.raminformatica.com.ar"
               inprogress={false}
-
             />
           </Col>
 
@@ -38,13 +38,11 @@ function Projects() {
             <ProjectCard
               imgPath={tablaPeriodicaImg}
               isBlog={false}
-              title="Tabla Periodica"
-              description="Periodic Table App is an interactive web application that allows users to explore all chemical elements in a modern and user-friendly interface. The project includes a dark and light mode feature, enhancing usability and accessibility for different viewing preferences.
-              Users can browse elements with key details such as atomic number, symbol, mass, and category, while enjoying a responsive design optimized for both desktop and mobile devices. With a clean layout and smooth theme switching, the Periodic Table App provides both educational value and an engaging user experience."
+              title={t('projects.tablaPeriodicsa.title')}
+              description={t('projects.tablaPeriodicsa.description')}
               ghLink="https://github.com/ramirotule/tablaperiodica"
               demoLink="https://tablaperiodica-nine.vercel.app/"
               inprogress={false}
-
             />
           </Col>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -7,6 +8,7 @@ import { useTheme } from "../../hooks/useTheme";
 
 function Home() {
   const { getCurrentPalette } = useTheme();
+  const { t } = useTranslation();
   const primaryColor = getCurrentPalette().primary;
   const homeLogo = getCurrentPalette().homeMain;
   return (
@@ -23,14 +25,14 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+                {t('home.greeting')}{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
+                  {t('home.wave')}
                 </span>
               </h1>
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name" style={{ color: primaryColor }}> Ramiro TOULEMONDE</strong>
+                {t('home.introduction')}
+                <strong className="main-name" style={{ color: primaryColor }}> {t('home.name')}</strong>
               </h1>
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />

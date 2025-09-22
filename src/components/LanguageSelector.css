@@ -1,0 +1,116 @@
+/* Estilos adicionales para el Language Selector */
+.language-selector {
+  position: relative;
+}
+
+/* Estilos para el toggle button */
+.language-selector .dropdown-toggle {
+  border: 1px solid var(--imp-text-color) !important;
+  background-color: transparent !important;
+  color: var(--imp-text-color) !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 0 0 0 transparent !important;
+  margin-left: 100px !important;
+  width: 140px !important;
+}
+
+.language-selector .dropdown-toggle:hover {
+  background-color: var(--imp-text-color) !important;
+  color: white !important;
+  border-color: var(--secondary-color) !important;
+  box-shadow: 0 0 8px rgba(199, 112, 240, 0.4) !important;
+}
+
+.language-selector .dropdown-toggle:focus {
+  background-color: var(--imp-text-color) !important;
+  color: white !important;
+  border-color: var(--secondary-color) !important;
+  box-shadow: 0 0 8px rgba(199, 112, 240, 0.4) !important;
+}
+
+/* Estilos para el dropdown menu */
+.language-selector .dropdown-menu {
+  background-color: var(--imp-bg-color) !important;
+  border: 1px solid var(--imp-text-color) !important;
+  box-shadow: 0 4px 12px rgba(199, 112, 240, 0.2), 0 8px 24px rgba(0,0,0,0.15) !important;
+  backdrop-filter: blur(10px);
+  min-width: 140px !important;
+  max-width: 170px !important;
+  width: auto !important;
+  left: 100px !important;
+}
+
+/* Estilos para los items del dropdown */
+.language-selector .dropdown-item {
+  color: var(--imp-text-color) !important;
+  background-color: transparent !important;
+  border-radius: 4px !important;
+  margin: 2px 6px !important;
+  transition: all 0.2s ease !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  padding: 8px 10px !important;
+  width: auto !important;
+}
+
+.language-selector .dropdown-item:hover {
+  background-color: rgba(199, 112, 240, 0.15) !important;
+  color: var(--accent-color) !important;
+  transform: translateX(4px);
+}
+
+.language-selector .dropdown-item.active {
+  background: linear-gradient(135deg, var(--imp-text-color), var(--secondary-color)) !important;
+  color: white !important;
+  margin: 2px 6px !important;
+  border-radius: 3px !important;
+}
+
+.language-selector .dropdown-item.active:hover {
+  background: linear-gradient(135deg, var(--secondary-color), var(--accent-color)) !important;
+  margin: 2px 6px !important;
+}
+
+/* Mejoras para el dropdown del idioma */
+.language-selector .dropdown-toggle::after {
+  border-top: 0.25em solid;
+  border-right: 0.2em solid transparent;
+  border-bottom: 0;
+  border-left: 0.2em solid transparent;
+  margin-left: 6px;
+}
+
+.language-selector .dropdown-toggle:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Animación suave para el dropdown */
+.language-selector .dropdown-menu {
+  animation: fadeIn 0.2s ease-in-out;
+  transform-origin: top right;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Mejoras para mobile */
+@media (max-width: 768px) {
+  .language-selector .dropdown-toggle {
+    padding: 6px 8px !important;
+    font-size: 12px !important;
+  }
+  
+  .language-selector .dropdown-menu {
+    min-width: 120px;
+  }
+}

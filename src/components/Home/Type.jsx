@@ -1,10 +1,12 @@
 
 import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect";
+import { useTranslation } from "react-i18next";
 import { useTheme } from "../../hooks/useTheme";
 
 function Type() {
   const { getCurrentPalette } = useTheme();
+  const { t } = useTranslation();
   const primaryColor = getCurrentPalette().primary;
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -26,9 +28,8 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Frontend Developer",
-          "Freelancer",
-          "Open Source Contributor",
+          t('home.roles.developer'),
+          t('home.roles.passionate'),
         ],
         autoStart: true,
         loop: true,

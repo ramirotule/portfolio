@@ -1,0 +1,134 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "resume": "Resume",
+    "customize": "Customize"
+  },
+  "home": {
+    "greeting": "Hi There!",
+    "wave": "👋🏻",
+    "introduction": "I'M",
+    "name": "RAMIRO TULE",
+    "roles": {
+      "developer": "Frontend Developer",
+      "passionate": "Passionate About Technology"
+    },
+    "aboutMe": "ABOUT ME",
+    "letMeIntroduce": "Let me introduce myself",
+    "description1": "I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️",
+    "description2": "I am fluent in classics like",
+    "technologies": "Javascript and Python.",
+    "description3": "My field of Interest's are building new",
+    "interests": "Web Technologies and Products",
+    "description4": "Whenever possible, I also apply my passion for developing products with",
+    "frameworks": "Node.js and Modern Javascript Library and Frameworks",
+    "react": "like React.js",
+    "findMe": "FIND ME ON",
+    "feelFree": "Feel free to",
+    "connect": "connect",
+    "withMe": "with me",
+    "home2": {
+      "letMeIntroduce": "LET ME INTRODUCE MYSELF",
+      "experience": "I have been developing web applications for more than 5 years, specializing exclusively in Frontend development",
+      "technologies": "I have long experience working with Technologies likes React.js & React Native, most of the time using TypeScript as the main programming language.",
+      "techHighlight1": " React.js ",
+      "techConnector1": " & ",
+      "techHighlight2": " React Native, ",
+      "techConnector2": "most of the time using ",
+      "techHighlight3": "TypeScript ",
+      "techConnector3": "as the main programming language.",
+      "personality": "I consider myself a proactive professional with excellent soft skills, always eager to learn and ready to take on new challenges. My passion lies in creating clean, scalable, and user-friendly interfaces, delivering great user experiences while constantly improving my technical skills.",
+      "passion": "Whenever possible, I also apply my passion for developing products with ",
+      "nextjs": "Next.js ",
+      "learning": " (Learning) "
+    }
+  },
+  "about": {
+    "title": "Know Who",
+    "highlight": "I'M",
+    "description1": "Hi Everyone, I am",
+    "name": "Ramiro Santiago Toulemonde",
+    "location": "from Santa Rosa, La Pampa, ARGENTINA.",
+    "description2": "I graduated as a Systems Analyst in 2012.",
+    "description3": "I have been working in the private IT sector for 3 and a half years since 2022 to present. Prior to this, I gained 6 years of experience in the IT field within a governmental organization, where I took my first steps in frontend development.",
+    "description4": "I am currently employed as a software developer at Temperies.",
+    "activities": "Apart from coding, some other activities that I love to do!",
+    "activity1": "Playing Intrustruments (Piano and Guitar)",
+    "activity2": "Restore old cars",
+    "activity3": "Travelling with my family",
+    "quote": "\"My favorite quote is: 'The only thing impossible is what you don't try!'\"",
+    "skillset": "Professional",
+    "skillsetHighlight": "Skillset",
+    "tools": "Tools",
+    "toolsHighlight": "I use",
+    "languages": "Languages",
+    "languagesHighlight": "I speak",
+    "daysCode": "Days I",
+    "daysCodeHighlight": "Code",
+    "languageSkills": {
+      "spanish": "Spanish",
+      "english": "English",
+      "native": "NATIVE",
+      "upperIntermediate": "B2 UPPER INTERMEDIATE"
+    }
+  },
+  "projects": {
+    "title": "My Recent",
+    "highlight": "Works",
+    "description": "Here are a few projects I've worked on recently.",
+    "github": "GitHub",
+    "demo": "Demo",
+    "underConstruction": "Under Construction",
+    "ramInformatica": {
+      "title": "RAM Informática",
+      "description": "Ram Informática is an e-commerce platform developed with React.js, focused on delivering a seamless and modern shopping experience for technology products. One of the key features of this project is its automation system, built with Python, which automatically processes daily price updates. The system reads product lists received through a WhatsApp newsletter, extracts and formats the data, and then uploads the updated prices directly to the platform. This integration ensures that customers always have access to the latest stock and pricing information, while significantly reducing the manual workload of updating product catalogs."
+    },
+    "tablaPeriodicsa": {
+      "title": "Tabla Periodica",
+      "description": "Periodic Table App is an interactive web application that allows users to explore all chemical elements in a modern and user-friendly interface. The project includes a dark and light mode feature, enhancing usability and accessibility for different viewing preferences. Users can browse elements with key details such as atomic number, symbol, mass, and category, while enjoying a responsive design optimized for both desktop and mobile devices. With a clean layout and smooth theme switching, the Periodic Table App provides both educational value and an engaging user experience."
+    },
+    "clickFragancias": {
+      "title": "Clickfragancias",
+      "description": "ClickFragancias is an e-commerce platform specialized in the sale of perfumes, cosmetics, and beauty products. The website is designed to provide customers with a smooth and enjoyable shopping experience, featuring an intuitive interface, organized product catalog, and secure checkout process. The platform focuses on offering a wide variety of fragrances and beauty essentials, making it easy for users to browse by categories, brands, and price ranges. With a modern and responsive design, ClickFragancias ensures accessibility across all devices, while building trust and convenience for customers looking to shop online."
+    },
+    "carsale": {
+      "title": "Carsale",
+      "description": "Carsale is a management platform designed for car dealerships to simplify and optimize their daily operations. The system provides tools to manage vehicle inventory, keep track of stock in real time, and streamline sales processes. One of its key features is the ability to automatically generate and publish posts on Instagram, showcasing available vehicles with their details such as model, price, and features. This automation not only saves time but also enhances the dealership's online presence and marketing strategy. By combining stock management with social media integration, Carsale offers dealerships an efficient way to control inventory, reach potential customers, and improve sales performance through digital channels."
+    },
+    "alkila": {
+      "title": "Alkila",
+      "description": "Alkila is a web platform designed to make property rentals more accessible for people in my city. The application allows users to search and explore available rentals with customizable filters, such as price range, number of rooms, property type, and more. The goal of Alkila is to simplify the process of finding a home by offering an intuitive interface, smart search options, and real-time listings. With a focus on usability and performance, the platform provides a modern solution for connecting property owners and renters, making the local housing market more transparent and efficient."
+    }
+  },
+  "resume": {
+    "downloadCV": "Download CV",
+    "loading": "Loading PDF...",
+    "error": "Error loading PDF",
+    "reload": "Reload page",
+    "cvTitle": "Curriculum Vitae",
+    "viewPdf": "View CV in PDF",
+    "cvDescription": "Click the button below to view or download my CV in PDF format"
+  },
+  "customize": {
+    "title": "Customize",
+    "highlight": "Theme",
+    "description": "Choose your favorite color theme for the portfolio",
+    "currentTheme": "Current Theme",
+    "selectTheme": "Select Theme",
+    "customizeDescription": "Customize the look and feel of the portfolio by choosing your favorite color palette from",
+    "availableOptions": "8 available options",
+    "optionsDetail": ": Purple (original), Green, Blue, Orange, Pink, Yellow, Red and Cyan. The changes will be applied immediately and saved for your next visit.",
+    "colorPalettes": "Color Palettes",
+    "selectFavorite": "Select your favorite color combination:",
+    "active": "Active",
+    "tip": "Tip:",
+    "tipDescription": "Each theme includes its own custom logo that adapts automatically."
+  },
+  "footer": {
+    "designed": "Designed and Developed by",
+    "copyright": "Copyright ©",
+    "rights": "Ramiro Toulemonde"
+  }
+}

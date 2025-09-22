@@ -1,0 +1,130 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Acerca de mí",
+    "projects": "Proyectos",
+    "resume": "Currículum",
+    "customize": "Personalizar"
+  },
+  "home": {
+    "greeting": "¡Hola!",
+    "wave": "👋🏻",
+    "introduction": "SOY",
+    "name": "RAMIRO TOULEMONDE",
+    "roles": {
+      "developer": "Desarrollador Frontend",
+      "passionate": "Apasionado por la Tecnología"
+    },
+    "aboutMe": "ACERCA DE MÍ",
+    "letMeIntroduce": "Déjame presentarme",
+    "interests": "Tecnologías Web y Productos",
+    "description4": "Siempre que es posible, también aplico mi pasión por desarrollar productos con",
+    "frameworks": "Node.js y Bibliotecas y Frameworks Modernos de Javascript",
+    "react": "como React.js",
+    "findMe": "ENCUÉNTRAME EN",
+    "feelFree": "No dudes en",
+    "connect": "conectar",
+    "withMe": "conmigo",
+    "home2": {
+      "letMeIntroduce": "DÉJAME PRESENTARME",
+      "experience": "He estado desarrollando aplicaciones web por más de 5 años, especializándome exclusivamente en desarrollo Frontend.",
+      "technologies": "Tengo amplia experiencia trabajando con tecnologías como React.js y React Native, la mayor parte del tiempo usando TypeScript como lenguaje de programación principal.",
+      "techHighlight1": " React.js ",
+      "techConnector1": " y ",
+      "techHighlight2": " React Native, ",
+      "techConnector2": "la mayor parte del tiempo usando ",
+      "techHighlight3": "TypeScript ",
+      "techConnector3": "como lenguaje de programación principal.",
+      "personality": "Me considero un profesional proactivo con excelentes habilidades blandas, siempre dispuesto a aprender y listo para asumir nuevos desafíos. Mi pasión radica en crear interfaces limpias, escalables y fáciles de usar, ofreciendo grandes experiencias de usuario mientras mejoro constantemente mis habilidades técnicas.",
+      "passion": "Siempre que es posible, también aplico mi pasión por desarrollar productos con ",
+      "nextjs": "Next.js ",
+      "learning": " (Aprendiendo) "
+    }
+  },
+  "about": {
+    "title": "Conoce quién",
+    "highlight": "SOY",
+    "description1": "Hola a todos, soy",
+    "name": "Ramiro Santiago Toulemonde",
+    "location": "de Santa Rosa, La Pampa, ARGENTINA.",
+    "description2": "Me gradué como Analista de Sistemas en 2012.",
+    "description3": "He estado trabajando en el sector privado de TI durante 3 años y medio desde 2022 hasta la actualidad. Antes de esto, adquirí 6 años de experiencia en el campo de TI dentro de una organización gubernamental, donde di mis primeros pasos en el desarrollo frontend.",
+    "description4": "Actualmente trabajo como desarrollador de software en Temperies.",
+    "activities": "Además de programar, ¡hay otras actividades que me encanta hacer!",
+    "activity1": "Tocar Instrumentos (Piano y Guitarra)",
+    "activity2": "Restaurar autos antiguos",
+    "activity3": "Viajar con mi familia",
+    "quote": "\"Mi frase favorita es: '¡Lo único imposible es lo que no intentas!'\"",
+    "skillset": "Conjunto de Habilidades",
+    "skillsetHighlight": "Profesionales",
+    "tools": "Herramientas",
+    "toolsHighlight": "que uso",
+    "languages": "Idiomas",
+    "languagesHighlight": "que hablo",
+    "daysCode": "Días que",
+    "daysCodeHighlight": "Programo",
+    "languageSkills": {
+      "spanish": "Español",
+      "english": "Inglés",
+      "native": "NATIVO",
+      "upperIntermediate": "B2 INTERMEDIO SUPERIOR"
+    }
+  },
+  "projects": {
+    "title": "Mis",
+    "highlight": "Trabajos Recientes",
+    "description": "Aquí hay algunos proyectos en los que he trabajado recientemente.",
+    "github": "GitHub",
+    "demo": "Demo",
+    "underConstruction": "En Construcción",
+    "ramInformatica": {
+      "title": "RAM Informática",
+      "description": "Ram Informática es una plataforma de e-commerce desarrollada con React.js, enfocada en brindar una experiencia de compra fluida y moderna para productos tecnológicos. Una de las características clave de este proyecto es su sistema de automatización, construido con Python, que procesa automáticamente las actualizaciones diarias de precios. El sistema lee las listas de productos recibidas a través de un newsletter de WhatsApp, extrae y formatea los datos, y luego sube los precios actualizados directamente a la plataforma. Esta integración asegura que los clientes siempre tengan acceso a la información más reciente de stock y precios, mientras reduce significativamente la carga manual de actualizar los catálogos de productos."
+    },
+    "tablaPeriodicsa": {
+      "title": "Tabla Periódica",
+      "description": "La Aplicación de Tabla Periódica es una aplicación web interactiva que permite a los usuarios explorar todos los elementos químicos en una interfaz moderna y fácil de usar. El proyecto incluye una característica de modo oscuro y claro, mejorando la usabilidad y accesibilidad para diferentes preferencias de visualización. Los usuarios pueden navegar por los elementos con detalles clave como número atómico, símbolo, masa y categoría, mientras disfrutan de un diseño responsivo optimizado para dispositivos de escritorio y móviles. Con un diseño limpio y cambio suave de temas, la Aplicación de Tabla Periódica proporciona tanto valor educativo como una experiencia de usuario atractiva."
+    },
+    "clickFragancias": {
+      "title": "Clickfragancias",
+      "description": "ClickFragancias es una plataforma de e-commerce especializada en la venta de perfumes, cosméticos y productos de belleza. El sitio web está diseñado para proporcionar a los clientes una experiencia de compra suave y agradable, con una interfaz intuitiva, catálogo de productos organizado y proceso de pago seguro. La plataforma se enfoca en ofrecer una amplia variedad de fragancias y esenciales de belleza, facilitando a los usuarios navegar por categorías, marcas y rangos de precios. Con un diseño moderno y responsivo, ClickFragancias asegura accesibilidad en todos los dispositivos, mientras construye confianza y conveniencia para clientes que buscan comprar en línea."
+    },
+    "carsale": {
+      "title": "Carsale",
+      "description": "Carsale es una plataforma de gestión diseñada para concesionarios de automóviles para simplificar y optimizar sus operaciones diarias. El sistema proporciona herramientas para gestionar el inventario de vehículos, mantener un seguimiento del stock en tiempo real y agilizar los procesos de ventas. Una de sus características clave es la capacidad de generar y publicar automáticamente publicaciones en Instagram, mostrando vehículos disponibles con sus detalles como modelo, precio y características. Esta automatización no solo ahorra tiempo sino que también mejora la presencia en línea y la estrategia de marketing del concesionario. Al combinar la gestión de stock con la integración de redes sociales, Carsale ofrece a los concesionarios una forma eficiente de controlar el inventario, llegar a clientes potenciales y mejorar el rendimiento de ventas a través de canales digitales."
+    },
+    "alkila": {
+      "title": "Alkila",
+      "description": "Alkila es una plataforma web diseñada para hacer más accesibles los alquileres de propiedades para las personas de mi ciudad. La aplicación permite a los usuarios buscar y explorar alquileres disponibles con filtros personalizables, como rango de precios, número de habitaciones, tipo de propiedad y más. El objetivo de Alkila es simplificar el proceso de encontrar un hogar ofreciendo una interfaz intuitiva, opciones de búsqueda inteligentes y listados en tiempo real. Con un enfoque en la usabilidad y el rendimiento, la plataforma proporciona una solución moderna para conectar propietarios y inquilinos, haciendo el mercado inmobiliario local más transparente y eficiente."
+    }
+  },
+  "resume": {
+    "downloadCV": "Descargar CV",
+    "loading": "Cargando PDF...",
+    "error": "Error al cargar el PDF",
+    "reload": "Recargar página",
+    "cvTitle": "Curriculum Vitae",
+    "viewPdf": "Ver CV en PDF",
+    "cvDescription": "Haz clic en el botón de abajo para ver o descargar mi CV en formato PDF"
+  },
+  "customize": {
+    "title": "Personalizar",
+    "highlight": "Tema",
+    "description": "Elige tu tema de color favorito para el portfolio",
+    "currentTheme": "Tema Actual",
+    "selectTheme": "Seleccionar Tema",
+    "customizeDescription": "Personaliza la apariencia del portfolio eligiendo tu paleta de colores favorita entre",
+    "availableOptions": "8 opciones disponibles",
+    "optionsDetail": ": Púrpura (original), Verde, Azul, Naranja, Rosa, Amarillo, Rojo y Cian. Los cambios se aplicarán inmediatamente y se guardarán para tu próxima visita.",
+    "colorPalettes": "Paletas de Colores",
+    "selectFavorite": "Selecciona tu combinación de colores favorita:",
+    "active": "Activo",
+    "tip": "Consejo:",
+    "tipDescription": "Cada tema incluye su propio logo personalizado que se adapta automáticamente."
+  },
+  "footer": {
+    "designed": "Diseñado y Desarrollado por",
+    "copyright": "Copyright ©",
+    "rights": "Ramiro Toulemonde"
+  }
+}

@@ -226,6 +226,8 @@ button:focus {
   color: white !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
 }
 
 .nav-link {
@@ -240,7 +242,8 @@ button:focus {
 
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 20px;
+  margin-left: 15px;
+  flex-shrink: 0;
 }
 
 .navbar-nav .nav-item a {
@@ -267,6 +270,22 @@ button:focus {
 
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
+}
+
+/* Ajustes para textos largos en diferentes idiomas */
+.navbar-nav {
+  flex-wrap: nowrap !important;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .nav-item {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  
+  .navbar-nav .nav-link {
+    text-align: center;
+  }
 }
 
 /* --------- */

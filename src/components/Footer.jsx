@@ -1,9 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
+  const { t } = useTranslation();
   return (
     <Container fluid className="footer" style={{ background: 'var(--section-background-color)' }}>
       <Row style={{ 
@@ -15,10 +17,10 @@ function Footer() {
         padding: '20px 0'
       }}>
         <Col md="4" className="footer-copywright" style={{ textAlign: 'center' }}>
-          <h3>Designed and Developed by Ramiro Toulemonde</h3>
+          <h3>{t('footer.designed')} {t('footer.rights')}</h3>
         </Col>
         <Col md="4" className="footer-copywright" style={{ textAlign: 'center' }}>
-          <h3>Copyright © {year} Ramiro Santiago Toulemonde</h3>
+          <h3>{t('footer.copyright')} {year} {t('footer.rights')}</h3>
         </Col>
       </Row>
     </Container>
