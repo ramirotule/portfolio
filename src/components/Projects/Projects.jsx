@@ -3,9 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import raminformaticaImg from "../../assets/Projects/ecommerce-ram.png";
-import clickFraganciasImg from  "../../assets/Projects/ecommerce-clickfragancias.png";
-import alkilaImg from  "../../assets/Projects/alkila.png";
-import carsaleImg from  "../../assets/Projects/carsale.png";
+import clickFraganciasImg from "../../assets/Projects/ecommerce-clickfragancias.png";
+import alkilaImg from "../../assets/Projects/alkila.png";
+import carsaleImg from "../../assets/Projects/carsale.png";
+import tablaPeriodicaImg from "../../assets/Projects/tablaperiodica.png";
 
 function Projects() {
   return (
@@ -17,8 +18,8 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        <Row style={{ justifyContent: "center", paddingBottom: "10px", display: "flex", alignItems: "stretch" }}>
+          <Col md={4} className="project-card" style={{ display: "flex" }}>
             <ProjectCard
               imgPath={raminformaticaImg}
               isBlog={false}
@@ -28,22 +29,26 @@ function Projects() {
               This integration ensures that customers always have access to the latest stock and pricing information, while significantly reducing the manual workload of updating product catalogs."
               ghLink="https://github.com/ramirotule/ecommerce-ram"
               demoLink="https://www.raminformatica.com.ar"
+              inprogress={false}
+
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={4} className="project-card" style={{ display: "flex" }}>
             <ProjectCard
-              imgPath={alkilaImg}
+              imgPath={tablaPeriodicaImg}
               isBlog={false}
-              title="Alkila"
-              description="Alkila is a web platform designed to make property rentals more accessible for people in my city. The application allows users to search and explore available rentals with customizable filters, such as price range, number of rooms, property type, and more.
-              The goal of Alkila is to simplify the process of finding a home by offering an intuitive interface, smart search options, and real-time listings. With a focus on usability and performance, the platform provides a modern solution for connecting property owners and renters, making the local housing market more transparent and efficient."
-              ghLink="https://github.com/ramirotule/alkila"
-              demoLink="https://alkila.com.ar"
+              title="Tabla Periodica"
+              description="Periodic Table App is an interactive web application that allows users to explore all chemical elements in a modern and user-friendly interface. The project includes a dark and light mode feature, enhancing usability and accessibility for different viewing preferences.
+              Users can browse elements with key details such as atomic number, symbol, mass, and category, while enjoying a responsive design optimized for both desktop and mobile devices. With a clean layout and smooth theme switching, the Periodic Table App provides both educational value and an engaging user experience."
+              ghLink="https://github.com/ramirotule/tablaperiodica"
+              demoLink="https://tablaperiodica-nine.vercel.app/"
+              inprogress={false}
+
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={4} className="project-card" style={{ display: "flex" }}>
             <ProjectCard
               imgPath={clickFraganciasImg}
               isBlog={false}
@@ -52,10 +57,11 @@ function Projects() {
               The platform focuses on offering a wide variety of fragrances and beauty essentials, making it easy for users to browse by categories, brands, and price ranges. With a modern and responsive design, ClickFragancias ensures accessibility across all devices, while building trust and convenience for customers looking to shop online."
               ghLink="https://github.com/ramirotule/ecommerce-clickfragancias"
               demoLink="https://ecommerce-clickfragancias.vercel.app/"
+              inprogress={false}
             />
           </Col>
 
-            <Col md={4} className="project-card">
+          <Col md={4} className="project-card" style={{ display: "flex" }}>
             <ProjectCard
               imgPath={carsaleImg}
               isBlog={false}
@@ -65,8 +71,25 @@ function Projects() {
               By combining stock management with social media integration, Carsale offers dealerships an efficient way to control inventory, reach potential customers, and improve sales performance through digital channels."
               ghLink="https://github.com/ramirotule/carsale"
               // demoLink="https://ecommerce-clickfragancias.vercel.app/"
+              inprogress={true}
             />
           </Col>
+
+          <Col md={4} className="project-card" style={{ display: "flex" }}>
+            <ProjectCard
+              imgPath={alkilaImg}
+              isBlog={false}
+              title="Alkila"
+              description="Alkila is a web platform designed to make property rentals more accessible for people in my city. The application allows users to search and explore available rentals with customizable filters, such as price range, number of rooms, property type, and more.
+              The goal of Alkila is to simplify the process of finding a home by offering an intuitive interface, smart search options, and real-time listings. With a focus on usability and performance, the platform provides a modern solution for connecting property owners and renters, making the local housing market more transparent and efficient."
+              ghLink="https://github.com/ramirotule/alkila"
+              demoLink="https://alkila.com.ar"
+              inprogress={true}
+
+            />
+          </Col>
+
+
 
         </Row>
       </Container>
