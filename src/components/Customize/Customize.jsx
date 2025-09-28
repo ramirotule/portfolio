@@ -3,10 +3,17 @@ import { MdPalette } from "react-icons/md";
 import Particle from "../Particle";
 import { useThemeContext } from "../../context/ThemeContext.jsx";
 import { useTranslation } from "react-i18next";
+import { trackThemeChange } from "../../utils/analytics";
 
 function Customize() {
   const { currentTheme, changeTheme, colorPalettes } = useThemeContext();
   const { t } = useTranslation();
+
+  const handleThemeChange = (themeKey, themeName) => {
+    changeTheme(themeKey);
+    // Trackear el cambio de tema
+    trackThemeChange(themeName);
+  };
 
   return (
     <Container fluid className="customize-section">
@@ -46,7 +53,7 @@ function Customize() {
                 <Col md={3} lg={3} xl={2} className="customize-card" key={key}>
                   <Card 
                     className={`customize-card-view ${currentTheme === key ? 'active-theme' : ''}`}
-                    onClick={() => changeTheme(key)}
+                    onClick={() => handleThemeChange(key, palette.name)}
                     style={{ cursor: 'pointer', marginBottom: '20px' }}
                   >
                     <Card.Body>

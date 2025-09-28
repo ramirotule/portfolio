@@ -3,6 +3,7 @@ import { Dropdown } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { FaGlobe } from 'react-icons/fa';
 import ReactCountryFlag from "react-country-flag";
+import { trackLanguageChange } from '../utils/analytics';
 import './LanguageSelector.css';
 
 const LanguageSelector = () => {
@@ -27,6 +28,8 @@ const LanguageSelector = () => {
 
   const changeLanguage = (languageCode) => {
     i18n.changeLanguage(languageCode);
+    // Trackear el cambio de idioma
+    trackLanguageChange(languageCode === 'en' ? 'English' : 'Español');
   };
 
   return (

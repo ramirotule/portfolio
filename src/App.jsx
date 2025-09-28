@@ -13,12 +13,25 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
+  Navigate,
+  useLocation
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import { trackPageView } from "./utils/analytics";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+// Componente para trackear cambios de página
+function AnalyticsTracker() {
+  const location = useLocation();
+
+  useEffect(() => {
+    trackPageView(location.pathname + location.search);
+  }, [location]);
+
+  return null;
+}
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -37,6 +50,7 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
+        <AnalyticsTracker />
         <Preloader load={load} />
         <div className="App" id={load ? "no-scroll" : "scroll"}>
           <Navbar />

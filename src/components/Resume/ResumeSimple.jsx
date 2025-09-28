@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import { useTranslation } from "react-i18next";
 import { AiOutlineDownload } from "react-icons/ai";
 import { useTheme } from "../../hooks/useTheme";
+import { trackDownloadCV } from "../../utils/analytics";
 
 function ResumeSimple() {
   const [showIframe, setShowIframe] = useState(true);
@@ -12,6 +13,10 @@ function ResumeSimple() {
 
   const toggleView = () => {
     setShowIframe(!showIframe);
+  };
+
+  const handleDownloadCV = () => {
+    trackDownloadCV();
   };
 
   return (
@@ -24,6 +29,7 @@ function ResumeSimple() {
               variant="primary"
               href={getCurrentPdfFile()}
               target="_blank"
+              onClick={handleDownloadCV}
               style={{ maxWidth: "250px", marginRight: "10px" }}
             >
               <AiOutlineDownload />
